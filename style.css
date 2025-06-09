@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(175, 172, 177);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #A63126;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 100px;
+    color: rgb(255, 255, 255);
+   position: fixed;
+   top: 0;
+   left: 0;
+     z-index: 1000;
+     font-family: arsenica;
+     font-size: 25px;
+}
+
+.logo{
+    height: 100px;
+    width: 100%;
+    background-color: #A63126;
+    display: flex;
+    align-items: center;
+   
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 360px;
+
+}
+
+.logo h1{
+
+     font-family: arsenica;
+    font-size: 40px;
+    color: aliceblue;
+    margin-left: 15px;
+
+
+}
+
+.menu{
+width:  600px;
+
+}
+
+.menu ul{
+    display: flex;
+}
+
+/* Especifidade */
+
+.menu ul li a{
+    padding: 10px 20px;
+    color: rgb(231, 225, 225);
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    color: #d8a749;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+.linha_home{
+background-image: url(assets/fundo.png);
+background-size: cover;
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+color: beige;
+align-items: flex-end;
+justify-content: space-around;
+background-attachment: fixed;
+}
+
+
+.container_home{
+    width: 1200px;
+    height: 100%;
+   padding-top: 110px;
+   display: flex;
+   align-items: flex-end;
+
+
+}
+
+.container_home h1{
+    font-family: arsenica;
+    font-size: 7vh;
+    margin-bottom: 40px;
+ 
+
+}
+
+.container{
+      font-family: arsenica;
+    font-size: 3vh;
+    width: 1200px;
+    height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   padding-top: 110px;
+}
+.linha{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.linha_entradas{
+    font-family: arsenica;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   background-image: url(assets/entrada.jpg);
+   background-size: cover;
+}
+
+   .linha_massas{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+ background-image: url(assets/massas.jpg);
+   background-size: cover;
+}
+   .linha_pizzas{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+ background-image: url(assets/pizzas.jpg);
+   background-size: cover;
+}
+    .linha_drinks{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+ background-image: url(assets/bebidas.jpg);
+   background-size: cover;
+}
+      .linha_sobremessas{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+ background-image: url(assets/sobremesas.jpg);
+   background-size: cover;
+}
+
+footer{
+width: 100%;
+height: 100px;
+background-color: #A63126;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.col_rodape{
+    width: 640px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.col_rodape h2{
+    font-family: arsenica;
+    font-size: 18px;
+    color: aliceblue;
+
+
+    
+}
+.entradas{
+    height: 620px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.massas{
+    height: 620px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pizzas{
+    height: 620px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.drinks{
+    height: 620px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sobremessas{
+    height: 620px;
+    width: 95%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card {
+   width: 20%;
+   height: 250px;
+   background-color: #bd847e;
+   border-radius: 15px;
+   margin: 10px 30px;
+   display: flex;
+  
+ flex-direction: column;
+   align-items: center;
+   padding-bottom: 10px;
+   justify-content: flex-start;
+
+}
+
+.card figure{
+
+    width: 200px;
+    height: 150px;
+   
+    margin-top: 10px;
+   object-fit: cover;
+}
+
+.card figure img {
+   width: 100%;
+   height: 100%;
+ border-radius: 10px;
+  
+
+
+}
+
+.card h2 {
+
+   align-content: center;
+      font-family: arsenica;
+    font-size: 15px;
+     color: rgb(236, 236, 236);
+     height: 40px ;
+     width: 100%;
+     padding: 5px 10px;
+     text-align: center;
+
+
+
+}
+
+.card p {
+margin: 10px 10px;
+      font-family: arsenica;
+    font-size: 20px;
+    color: #7e2a23;
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 800;
+
+}
+
+.card:hover {
+   transform: scale(1.05);
+}
+
+
+
+.redesocial img{
+ width: 60px;
+    height: 60px;
+    display: flex;
+    margin-right: 30px;
+  
+}
+
+.localização img{
+ width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 360px;
+    margin-top: 15px;
+   
+  
+}
+
+.logo_rodape img{
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 360px;
+
+}
+
+.titulo {
+   background-color: rgb(243, 252, 221);
+   width: 40%;
+   display: flex;
+   justify-content: center;
+   border-radius: 15px;
+}
+
+
+
